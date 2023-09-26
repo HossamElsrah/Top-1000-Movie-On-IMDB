@@ -10,6 +10,14 @@ import helper
 
 df = helper.load_data()
 
+uploaded_file = st.file_uploader(
+    "Choose your database", accept_multiple_files=False)
+if uploaded_file is not None:
+    file_name = uploaded_file
+else:
+    file_name = "DatabaseSample.xlsx"
+
+
 
 st.title('Top 1000 movis on IMDB')
 st.markdown('This App is Visualization for Certificates of movies on IMDB')

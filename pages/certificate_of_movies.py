@@ -8,7 +8,6 @@ import plotly.express as px
 from datetime import datetime
 import helper
 
-df = helper.load_data()
 
 uploaded_file = st.file_uploader(
     "Choose your database", accept_multiple_files=False)
@@ -16,6 +15,9 @@ if uploaded_file is not None:
     file_name = uploaded_file
 else:
     file_name = "DatabaseSample.xlsx"
+
+
+df = helper.load_data()
 
 
 

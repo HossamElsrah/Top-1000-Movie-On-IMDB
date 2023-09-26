@@ -10,7 +10,7 @@ from datetime import datetime
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('C:/Users/hpc/Desktop/Mid Project/imdb_top_1000_with_movie_type.csv')
+    df = pd.read_csv('imdb_top_1000_with_movie_type.csv')
     return df
 
 df = load_data()

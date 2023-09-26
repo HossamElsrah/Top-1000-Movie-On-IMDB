@@ -1,12 +1,5 @@
 import streamlit as st
 
-uploaded_file = st.file_uploader(
-    "Choose your database", accept_multiple_files=False)
-if uploaded_file is not None:
-    file_name = uploaded_file
-else:
-    file_name = "DatabaseSample.xlsx"
-
 
 st.title('IMDB Movies Data Analysis')
 st.markdown('This App is Analysis for Top movies on IMDB')
